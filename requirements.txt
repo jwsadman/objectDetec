@@ -5,4 +5,3 @@ streamlit
 opencv-python
 ultralytics
 opengl-python
-libGL

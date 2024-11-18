@@ -4,3 +4,4 @@ matplotlib
 streamlit
 opencv-python
 ultralytics
+PyOpenGL PyOpenGL_accelerate

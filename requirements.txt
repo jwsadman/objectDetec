@@ -4,3 +4,4 @@ matplotlib
 streamlit
 opencv-python
 ultralytics
+gunicorn==23.0.0

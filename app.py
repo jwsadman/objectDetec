@@ -4,6 +4,18 @@ import numpy as np
 from ultralytics import YOLO
 from PIL import Image
 import os
+from http.server import SimpleHTTPRequestHandler
+from socketserver import TCPServer
+
+# Get the port from the environment variable, default to 8000
+PORT = int(os.getenv("PORT", 8000))
+
+Handler = SimpleHTTPRequestHandler
+
+with TCPServer(("", PORT), Handler) as httpd:
+    print(f"Serving on port {PORT}")
+    httpd.serve_forever()
+
 
 
 # Set the title of the Streamlit app

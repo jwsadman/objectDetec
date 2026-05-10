@@ -16,7 +16,7 @@ uploaded_file = st.file_uploader("Upload an image or video you want to detect", 
 
 # Load YOLO model
 try:
-    model = YOLO('G:\mlOps\objectDetection\yolov8 model 2.pt')  # Replace with the path to your trained YOLO model
+    model = YOLO('./yolov8 model 2.pt')  # Replace with the path to your trained YOLO model
 except Exception as e:
     st.error(f"Error loading YOLO model: {e}")
 
